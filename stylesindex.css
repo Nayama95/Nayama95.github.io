@@ -334,8 +334,3 @@ textarea {
     height: 20px;
     margin: 0 1px -5.5px 0;
 }
-@media screen and (max-width: 600px) {
-    .nav {
-        display: none;
-    }
-}
