@@ -1,83 +1,80 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="src/logo1.png" type="image/x-icon">
-        <title>Alvin Nayama</title>
-        <link rel="stylesheet" href="styles.css">
-        <script src="script.js"></script>
-    </head>
-    <body>
-        <div>
-            <ul class="nav">
-                <img src="src/logo1.png" alt="logo" class="gambarlogo">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alvin Nayama</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <img src="src/logo1.png" alt="logo" class="gambarlogo">
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#project">Project</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="menu-toggle">☰</div>
         </div>
-        <div class="parent-container">
-            <div id="home">
-                <h1 class="awalan">Nayama</h1>
-                <p class="deskrip">Saya merupakan lulusan dari Jurusan Teknik Elektro. Jurusan tersebut merupakan 
-                    jurusan yang sama seperti jurusan saya saat SMK. Alasan saya masuk ke jurusan Teknik Elektro 
-                    adalah karena saya tertarik di dunia kelistrikan di mana setelah saya observasi, 
-                    jurusan tersebut mempelajari berbagai hal yang bisa mendukung saya berkarir di posisi electrical 
-                    engineering.
-                </p>
-                <div class="button-container">
-                    <button class="button" onclick="location.href='#about';">Tentang</button>
-                    <button class="button" onclick="location.href='#pdf';">Download Resume</button>
-                </div>
+    </nav>
+    <script src="scriptnav.js"></script>
+    <div class="parent-container">
+        <div id="home">
+            <h1 class="awalan">Alvin Nayama</h1>
+            <p class="deskrip">Saya merupakan lulusan dari Jurusan Teknik Elektro. Jurusan tersebut merupakan 
+                jurusan yang sama seperti jurusan saya saat SMK. Alasan saya masuk ke jurusan Teknik Elektro 
+                adalah karena saya tertarik di dunia kelistrikan di mana setelah saya observasi, 
+                jurusan tersebut mempelajari berbagai hal yang bisa mendukung saya berkarir di posisi electrical 
+                engineering.
+            </p>
+            <div class="button-container">
+                <button class="button" onclick="location.href='#about';">Tentang</button>
+                <button class="button" onclick="location.href='#resume';">Download Resume</button>
             </div>
-            <div id="about">
-                <div class="profil-row">
-                    <div class="profil-text">
-                        <h2 class="awalantentang">Tentang </h2>
-                        <p class="deskriptentang">Contrary to popular belief, Lorem Ipsum is not simply random text. 
-                            It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. 
-                            Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the
-                            more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of 
-                            the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 
-                            1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, 
-                            written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. 
-                            The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-                                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. 
-                            Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in 
-                            their exact original form, accompanied by English versions from the 1914 translation by H. Rackham..</p>
-                    </div>
-                    <div class="profil-image">
-                    </div>
-                </div>
-                <h3 class="awalantentang1">Skill</h3>
-                <div class="icon-container">
-                    <div class="icon"><img src="src/pemandan.png"><p>Arduino</p></div>
-                    <div class="icon"><img src="src/pemandan.png"><p>Pneumatic</p></div>
-                    <div class="icon"><img src="src/pemandan.png"><p>MEP</p></div>
-                    <div class="icon"><img src="src/pemandan.png"><p>PLC</p></div>
-                    <div class="icon"><img src="src/pemandan.png"><p>Raspberry Pi</p></div>
-                </div>
-            </div>
-            <div id="contact">
-                <h5 class="awalanproject">Contact</h5>
-                <form method="POST" action="proses.php">
-                    <input type="email" name="email" id="email" placeholder="Email" class="inputemail" required>
-                    <br><br>
-                    <input type="text" name="judul" id="judul" placeholder="Judul" class="inputpesan" required>
-                    <br><br>
-                    <textarea name="pesan" id="pesan" rows="4" placeholder="Pesan" required></textarea>
-                    <br><br>
-                    <button type="submit" value="Kirim Email">Kririm Email</button>
-                </form> 
-            </div>
-            <footer>
-                <div class="contact-info">
-                    <p><img src="src/email.png">aabb@mai.com</p>
-                    <p><img src="src/phone.png">+62812345678910</p>
-                </div>
-            </footer>
         </div>
-    </body>
+        <div id="about">
+            <div class="profil-row">
+                <div class="profil-text">
+                    <h2 class="awalantentang">Tentang </h2>
+                    <p class="deskriptentang">Hai, Saya merupakan orang yang tertarik dengan hal baru dan pada Tugas Akhir saya mengambil judul 
+                        mengenai face recognition dengan judul Perancangan Model Sistem Pengendalian Gerbang Otomatis 
+                        Dengan Mengggunakan Face Recognition. Selama kuliah mempelajari pengendalian mesin listrik, 
+                        membuat desain mekanikal, elektrikal dan perpipaan pada sebuah Gedung, pengendalian scada dan 
+                        pembuatan desain DCS Yokogawa. Saya pernah bekerja magang selama 3 bulan di sebuah pabrik yang 
+                        memproduksi  makanan.  Di  sana,  saya  terlibat  dalam  berbagai  aspek  dalam  perawatan  peralatan 
+                        produksi, seperti memperbaiki konveyor yang mengalami kerusakan, melakukan perawatan pneumatic, 
+                        kemudian pada 2 bulan terakhir ditempatkan pada ruangan Boiler untuk mengambil judul laporan 
+                        sistem kontrol pada boiler. Saya juga pernah kerja praktek selama satu bulan di PPSDM Migas, disana 
+                        saya ditempatkan pada bengkel instrumen dimana mempelajari mengenai control valve, PLC Allen 
+                        Bredley dan DCS Yokogawa. Pada PPSDM Migas saya mengambil judul laporan SISTEM KONTROL 
+                        PADA FURNACE PPSDM MIGAS Dengan DCS Yokogawa.</p>
+                </div>
+                <div class="profil-image">
+                </div>
+            </div>
+            <h3 class="awalantentang1">Skill</h3>
+            <div class="icon-container">
+                <div class="icon"><img src="src/arduino-logo-1.png"><p>Arduino</p></div>
+                <div class="icon"><img src="src/pneumatik-removebg-preview.png"><p>Pneumatic</p></div>
+                <div class="icon"><img src="src/plumbing-removebg-preview.png"><p>MEP</p></div>
+                <div class="icon"><img src="src/plc.png"><p>PLC</p></div>
+                <div class="icon"><img src="src/raspberry-pi.png"><p>Raspberry Pi</p></div>
+            </div>
+        </div>
+        <div id="contact">
+            <h5 class="awalancontact">Contact</h5>
+            <form method="POST" action="proses.php">
+                <input type="email" name="email" id="email" placeholder="Email" class="inputemail" required>
+                <br><br>
+                <input type="text" name="judul" id="judul" placeholder="Judul" class="inputpesan" required>
+                <br><br>
+                <textarea name="pesan" id="pesan" rows="4" placeholder="Pesan" required></textarea>
+                <br><br>
+                <button type="submit" value="Kirim Email">Kririm Email</button>
+            </form> 
+        </div>
+    </div>
+</body>
 </html>
