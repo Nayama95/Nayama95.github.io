@@ -1,17 +1,6 @@
-const icons = document.querySelectorAll('.coverskill');
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
 
-icons.forEach(icon => {
-    icon.addEventListener('mouseover', () => {
-        icons.forEach(i => {
-            if (i !== icon) {
-                i.style.transform = 'scale(0.8)';
-            }
-        });
-    });
-
-    icon.addEventListener('mouseout', () => {
-        icons.forEach(i => {
-            i.style.transform = 'scale(1)';
-        });
-    });
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
 });
